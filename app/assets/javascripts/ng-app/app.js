@@ -2,7 +2,8 @@ angular
     .module('AngularRails', [
         'ngAnimate',
         'ui.router',
-        'templates'
+        'templates',
+        'restangular'
     ])
     .config(function ($stateProvider, $urlRouterProvider, $locationProvider) {
 
@@ -43,7 +44,19 @@ angular
 	            .state('dashboard.three', {
 	                url: '/three',
 	                templateUrl: 'dashboard/three.html'
-	            });
+	            })
+
+	        .state('test', {
+	        		url: '/test',
+	        		templateUrl: 'test.html'
+	        		// controller: 'WidgetsCtrl'
+	        })
+
+	        .state('widget', {
+	        		url: '/widget',
+	        		templateUrl: 'widget.html',
+	        		controller: 'WidgetsCtrl'
+	        });
 
 	    // default fall back route
 	    $urlRouterProvider.otherwise('/');

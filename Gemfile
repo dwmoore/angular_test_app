@@ -13,6 +13,7 @@ gem 'high_voltage'
 gem 'pg'
 gem 'bower-rails'
 gem 'angular-rails-templates'
+gem 'angular_rails_csrf'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]

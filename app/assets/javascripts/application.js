@@ -12,9 +12,11 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require lodash
 //= require angular
 //= require angular-animate
 //= require angular-ui-router
 //= require angular-rails-templates
+//= require restangular
 //= require_tree .
 //= require_tree ../templates
